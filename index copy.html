@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ccc</title>
+   <style>
+     html {
+            scroll-behavior: smooth; /* Enables smooth scrolling */
+        }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        overflow-x: hidden;
+        background-color: #343045;
+    }
+    .logo img{
+        width: 150px; 
+    }
+    nav{
+        position:sticky;
+        top: 0;
+        width: 100dvw;
+        height: auto;
+        /* background-color: red; */
+        display: flex;
+        justify-content: space-around;
+    }
+    .fix{
+        display: flex;
+        width: 50vw;
+        /* background-color: black; */
+        justify-content: space-between;
+
+    }
+    .link ul {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+        height: 100%;
+        /* margin-top: 70px; */
+        align-items: center;
+
+        
+    }
+    .link ul li a{
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight:bolder ;
+    }
+    .con{
+        display: flex;
+        gap: 20px;
+        /* margin-top: 55px; */
+        height: 100%;
+        align-items: center;
+    }
+    .con button{
+        width: 154px;
+        height: 48px;
+        border-radius: 40px;
+    }
+
+
+
+    .home{
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+    }
+    .home1{
+        display: flex;
+        gap: 200px;
+
+    }
+    .left .first{
+        font-size: 46px;
+        font-weight: bold;
+        width: 530px;
+        height: 56px;
+        color: #C0B7E8;
+        
+    }
+    .left{
+        padding-left: 200px;
+        padding-top: 100px;
+
+    }
+    .left .line{
+        font-size: 46px;
+        font-weight: bold;
+        background: linear-gradient(to right,#C0B7E8,#8176AF);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    .left .border{
+        border-right: 10px solid #8176AF;
+    }
+    .margin{
+        padding: 0 20px;
+    }
+    .left p{
+        font-size: 16px;
+        color: #FFFFFF;
+        width: 727px;
+        height: 72px;
+        line-height: auto;
+        font-weight: lighter;
+        padding-top:10px ;
+        padding-left: 5px;
+    }
+    .leftb{
+        display: flex;
+    }
+    .leftb button{
+        font-size: 12px;
+        font-weight: bold;
+        color: #343045;
+        width: 214px;
+        height: 48px;
+        border: none;
+        border-radius: 40px;
+        background:linear-gradient(to right,#8176AF,#C0B7E8) ;
+        margin-top: 30px;
+        margin-right: 20px;
+        /* margin-left: 100px; */
+    } 
+
+
+
+    .home2{
+        margin-top: 50px;
+        margin-left: 200px;
+        display: flex;
+        width:1272px;
+        height: 167px;
+        justify-content: space-evenly;
+        /* background-color: red; */
+        align-items: center;
+        border: none;
+        border-radius: 90px;
+        color: #FFFFFF;
+        background:radial-gradient(#3A3456,#211E2E) ;
+    }
+    .same{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+  .hinfo span{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .hinfo p{
+    font-size: 14px;
+  }
+
+
+  .about{
+    width: 100vw;
+    height: 100vw;
+   padding: 100px;
+  }
+  .abouth{
+    display: flex;
+   margin-top: 150px;
+  }
+  .abouth h1{
+    margin-left: 200px;
+    color: #FFFFFF;
+    font-weight: bolder;
+  }
+  .abouth span{
+    width: 150px;
+    height: 44px;
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: lighter;
+    margin-top: 40px;
+  margin-left: -256px;
+  }
+  .abouth p{
+    margin-left: 500px;
+    width: 673px;
+    height: 92px;
+    color: #FFFFFF;
+    font-size: 18px;
+  }
+  .aboutc{
+    display: flex;
+    margin-left: 200px;
+    gap: 120px;
+    margin-top: 100px;
+  }
+  .aboutimg{
+    width: 524px;
+    height:557px;
+  }
+  .imginfo{
+    padding-top: 50px;
+  }
+  .imginfo h1{
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: bolder;
+  }
+  .imginfo span{
+    color: #FFFFFF;
+    font-size: 36px;
+  }
+  .imginfo p{
+    color: #FFFFFF;
+    width: 715px;
+    height: 100px;
+    font-size: 16px;
+    font-weight: lighter;
+    padding-top: 10px;
+  }
+  .imginfo button{
+    margin-top: 100px;
+    width: 214px;
+    height: 48px;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(to right,#8176AF,#C0B7E8);
+    font-size: 12px;
+    font-weight: bold;
+    color: #343045;
+  }
+
+
+
+
+
+
+  .why{
+    padding-top: 150px;
+    margin-left: 200px;
+    height: auto;
+  }
+  .why1 h1{
+    color: #FFFFFF;
+    font-size: 46px;
+    
+  }
+  .why1 span{
+    margin-top: 50px;
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: lighter;
+  }
+  .why1 p{
+    color: #FFFFFF;
+    font-size: 16px;
+    width: 727px;
+    height: 98px;
+    margin-left: 700px;
+    margin-top: -90px;
+  }
+
+
+  .why2{
+    margin-top:100px ;
+    display: flex;
+    gap: 30px;
+  }
+  .card{
+    width: 310px;
+    height: 511px;
+    background: radial-gradient(#433D60,#211E2E);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px ;
+    /* padding-left: 50px; */
+    text-align: center;
+  }
+  .cardinfo h1{
+    font-size: 34px;
+    
+    padding-top: 20px;
+    color: #FFFFFF;
+    width: 280px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #C0B7E8;
+    margin-bottom: 50px;
+  }
+  .cardinfo span{
+    padding-top:50px;
+    color: #FFFFFF;
+    font-size: 15px;
+  }
+  .cardinfo button{
+    margin-top: 20px;
+    width: 154px;
+    height: 48px;
+    border-radius: 40px;
+    background: linear-gradient(to right,#8176AF,#C0B7E8);
+    color: #343045;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+  }
+  .techimage img{
+    margin-top: 50px;
+    width: 1278px;
+    height: 353px;
+  }
+
+
+
+
+  .tech{
+    width: 100%;
+    height: 100dvb;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cimage{
+    display:inline-flex;
+    gap: 50px;
+  }
+  .image1{
+    margin-top: 25px;
+  }
+  .image3{
+   margin-top: -40px;
+  }
+  .oi img{
+    width: 70vw;
+    /* height: 25px; */
+    height: 300px;
+  }
+
+
+
+
+
+
+  .how{
+    width: 100vw;
+    height: 100dvh;
+    padding-top: 100px ;
+    padding-left: 200px;
+  }
+  .howh h1{
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: bolder;
+    margin-top: 50px;
+  }
+  .howh span{
+    color: #FFFFFF;
+    font-size:36px ;
+    font-weight: lighter;
+  }
+  .howh p{
+    color: #FFFFFF;
+    width: 652px;
+    height: 110px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-left: 800px;
+    margin-top: -80px;
+}
+.howc{
+    margin-top: 90px;
+    display: flex;
+    gap: 50px;
+}
+.setimg span{
+    position: relative;
+    top: -60px;
+    left: -110px;
+    font-size: 64px;
+}
+.setc span{
+    width: 100px;
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.join{
+    width: 100vw;
+    height: 100dvh;
+    text-align: center;
+    /* background: radial-gradient(#403A5F,#211E2E); */
+}
+.join hr {
+    width: 414px;
+    height: 2px;
+    background: linear-gradient(to right,#343045 ,#C0B7E8 35%,#8176AF 69%,#343045 100%);
+    border: none;
+    margin-top: 20px ;
+}
+/* 
+.nt{
+    width: 524px;
+    height: 72px;
+    background: transparent;
+    border-color: #FFFFFF;
+    border-radius:40px ;
+    /* margin-right: 5px; */
+    /* margin-top: 20px;
+ }
+  .full{
+    background: transparent;
+    width:1058px ;
+    height: 72px;
+    border-radius: 40px;
+    border-color: #FFFFFF;
+    marg
+  } */ */
+  .nt, .full {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: inline-block; /* Ensures inputs stay inline */
+    vertical-align: middle; /* Align inputs vertically */
+}
+
+table {
+    border-collapse: collapse; /* Remove any spacing between table cells */
+}
+
+th, td {
+    padding: 0;
+    /* Remove padding from table cells */
+}
+.nt{
+    width: 524px;
+    height: 72px;
+    background: transparent;
+    border-color: #FFFFFF;
+    border-radius:40px ;
+    margin-right: 5px; 
+    margin-top: 20px; 
+ }
+ .full{
+    background: transparent;
+    width:1058px ;
+    height: 72px;
+    border-radius: 40px;
+    border-color: #FFFFFF;
+    margin-top:20px ;
+ }
+.area{
+    height: 210px;
+    background: transparent;
+    width:1058px ;
+    /* height: 72px; */
+    border-radius: 40px;
+    border-color: #FFFFFF;
+    margin-top:20px ;
+}
+.join button{
+    width: 214px;
+    height: 48px;
+    border: none;
+    border-radius: 40px;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #343045;
+    font-weight: bolder;
+    background:linear-gradient(to right,#8176AF,#C0B7E8);
+}
+footer {
+    width: 100dvw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 400px;
+    margin-top: -100px;
+}
+.foot1{
+    display: flex;
+    gap: 50px;
+}
+.fpart1{
+    width:286px ;
+    height: 243px;
+    display: flex;
+}
+.fline{
+    height: 196px ;
+    
+    width: 2px;
+    background: linear-gradient(to bottom,#343045,#C0B7E8 35%, #8176AF 69%,#343045 99%);
+}
+.flist ul{
+    list-style: none;
+    gap: 10px;
+    margin-right: 50px;
+}
+.flist ul li{
+    padding: 9px 0;
+}
+.flist a{
+    text-decoration: none;
+    color: #FFFFFF ;
+    font-size:16px ;
+    font-weight: bold;
+}
+.fpart4{
+    margin-left: -150px;
+}
+.fpart4 span{
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.contentimage{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+}
+.fpart4 button{
+    width: 214px;
+    height: 48px;
+    border-radius: 40px;
+    background: linear-gradient(to right,#8176AF,#C0B7E8);
+    color: #343045;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+}
+.foot2{
+    margin-top: -50px;
+    margin-left: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+}
+.foot2 hr{
+    width: 1269px;
+    height: 2px;
+    background: linear-gradient(to right,#343045 ,#C0B7E8 35%,#8176AF 69%,#343045 100%);
+    border: none;
+    margin-top: 20px ;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+   </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="Frame 1 1.png" alt=""></div>
+
+
+        <div class="fix" >
+
+            <div class="link">
+                <ul>
+                    <li><a href="#about">ABOUT</a></li>
+      
+        <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#tech">TECHNOLOGIES</a></li>
+                    <li><a href="#how">HOW TO</a></li>
+                </ul>
+            </div>
+
+
+            <div class="con">
+                <button style="color: #FFFFFF; background-color: transparent; border-color: #FFFFFF;">CONTACT US</button>
+                <button style="background-color: #C0B7E8; color: #343045;">JOIN CCC</button>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+
+
+
+
+<main>
+<div class="home">
+    <div class="home1">
+
+        <div class="left">
+            <span class="first" >CLoud Computing Cell</span>
+            <br>
+            <span class="line border">
+                Think
+            </span>
+            <span class="line border margin">Develop</span>
+            <span class="line margin">Deploy</span>
+            <p>
+                Dive into the future with cloud computing, where scalability meets innovation.
+                Access resources on demand, enhance collaboration, and drive efficiency like never before. 
+                Transform your ideas into reality in the limitless cloud.  
+            </p>
+            <div class="leftb">
+                <div class="but"><button>BUILD BOOST BEYOND</button></div>
+                <div class="arr"> <img src="arrow-small-right.png" width="100px"  alt=""></div>
+            </div>
+        </div>
+
+        <div class="right"><img src="Mask group.png" alt="" ></div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="home2">
+     <div class="loc same">
+        <div class="himg"><img src="Location-Icon.png" alt="" width="60px" height="70px" ></div>
+        <div class="hinfo">
+            <span>Visit Us</span>
+            <p>3rd floor CS-IT Block AKGES</p>
+        </div>
+     </div>
+     <div class="call same">
+        <div class="himg"><img src="shape.png" alt="" width="40.83px" height="61.25px"></div>
+        <div class="hinfo">
+            <span>Give Us a Call</span>
+            <p>(110) 1111-1010</p>
+        </div>
+     </div>
+     <div class="mes same">
+        <div class="himg"><img src="mail.png" alt="" width="60px" height="70px"></div>
+        <div class="hinfo">
+            <span >Send Us a Message</span>
+            <p>cccakgec@gmail.com</p>
+        </div>
+     </div>
+    </div>
+
+
+
+    <div class="about" id="about">
+      <div class="abouth">
+        
+        <!-- <span>INTRODUCTION</span> -->
+         <h1>INTRODUCTION</h1>
+        
+        <span>To CCC</span>
+        
+        <!-- <img src="arrow-small-right.png"  alt=""> -->
+        
+
+            <p>Welcome to the Cloud Computing Cell, where technology meets innovation. Our mission
+               is to explore, learn, and implement cutting-edge cloud solutions, empowering individuals 
+              and organizations to achieve more. Join us to unlock the potential of the cloud and drive a future of limitless possibilities!</p>
+       
+      </div>
+      <div class="aboutc">
+        <div class="aboutimg">
+
+            <img src="Mask group (1).png" alt="">
+        </div>
+        <div class="imginfo">
+
+            <h1>SERVICES</h1>
+            <span>MODELS</span>
+            <p>
+             Infrastructure as a Service (IaaS): Provides virtualized computing resources like servers, 
+ storage, and networking on a pay-as-you-go basis. Examples: AWS EC2, Google Compute Engine. <br>
+ Platform as a Service (PaaS): Offers a platform for developers to build, test, and deploy 
+ applications without managing underlying infrastructure. Examples: Google App Engine,
+ Microsoft Azure.
+ Software as a Service (SaaS): Delivers software applications over the internet, accessible 
+ via web browsers. Examples: Google Workspace, Salesforce.
+            </p>
+            <button>Create your cloud service</button>
+        </div>
+      </div>
+      <div class="why" id="services">
+           <div class="why1">
+            <h1>WHY BUILD</h1>
+            <span>USING CLOUD</span>
+            <p>Building on the cloud offers unmatched scalability, flexibility, and cost efficiency. It enables
+                rapid deployment, global reach, and access to advanced tools like AI and big data analytics.
+                With built-in security and reliability, the cloud empowers innovation while reducing infrastr
+                ucture management overhead.</p>
+           </div> 
+           <div class="why2">
+            <div class="card">
+                <div class="cardimg"><img src="card1.png" alt=""></div>
+                <div class="cardinfo">
+                    <h1>DATA STORAGE</h1>
+                    <span>Cloud provides scalable, secure storage solutions for backing up and accessing data anytime. Services like AWS S3 and Google.</span>
+                    <br>
+                    <button>TRY IT NOW</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardimg"><img src="card2.png" alt=""></div>
+                <div class="cardinfo">
+                    <h1>WEB HOSTING</h1>
+                    <span>Cloud hosting allows websites and applications to be deployed globally with high uptime and scalability</span>
+                    <br>
+                    <button>TRY IT NOW</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardimg"><img src="card3.png" alt=""></div>
+                <div class="cardinfo">
+                    <h1>BIG DATA</h1>
+                    <span>Cloud-based disaster recovery ensures quick data restoration and business continuity with minimal downtime,</span>
+                    <br>
+                    <button>TRY IT NOW</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardimg"><img src="card4.png" alt=""></div>
+                <div class="cardinfo">
+                    <h1>RECOVERY</h1>
+                    <span>Cloud platforms enable efficient processing and analysis of large datasets, offering tools like Google BigQuery</span>
+                    <br>
+                    <button>TRY IT NOW</button>
+                </div>
+            </div>
+           </div>
+           <!-- <div class="techimage"><img src="Tech-Section.png" alt=""></div> -->
+      </div>
+    </div>  
+    
+    <!-- <div class="about" style="background-color: red;"></div>  -->
+</div>
+
+
+<div class="tech" id="tech">
+    <div class="techimage"><img src="Tech-Section.png" alt=""></div>
+    <div class="cimage">
+        <div class="image1"><img src="amazon.png" alt=""></div>
+        <div class="image2"><img src="axure.png" alt=""></div>
+        <div class="image3"><img src="image3.png" 
+              ></div>
+        <div class="image4">
+            <img src="image 4.png" alt="">
+        </div>
+    </div>
+    <div class="oi"><img src="DALL·E 2024-12-10 01.05.49 - A visually appealing collage of images representing various aspects of cloud computing. The collage includes icons and visuals of data servers, cloud .webp" alt=""></div>
+</div>
+
+
+
+
+
+<div class="how" id="how">
+<div class="howh">
+    <h1>HOW WE BUILD</h1>
+    <span>WITH CLOUD</span>
+    <p>Building with the cloud involves leveraging scalable infrastructure, on-demand resources, and managed services to deploy applications and store data. <br> By using cloud platforms like AWS, Azure, or Google Cloud, developers can focus on building and scaling applications without worrying about managing physical hardware. The cloud enables rapid innovation, cost efficiency, and global reach.</p>
+</div>
+<div class="howc">
+    <div class="set">
+        <div class="setimg">
+            <img src="Ellipse 10.png" alt="">
+            <span>01</span>
+        </div>
+        <div class="setc">
+            <img src="arrow-small-right.png" width="67px" alt="">
+            <span>Plan & <br> Design</span>
+        </div>
+    </div>
+    <div class="set"> <div class="setimg">
+        <img src="Ellipse 10.png" alt="">
+        <span>02</span>
+    </div>
+    <div class="setc">
+        <img src="arrow-small-right.png" width="67px" alt="">
+        <span>Set Up <br>
+            Infrastructure</span>
+    </div>
+    </div>
+    <div class="set"> <div class="setimg">
+        <img src="Ellipse 10.png" alt="">
+        <span>03</span>
+    </div>
+    <div class="setc">
+        <img src="arrow-small-right.png" width="67px" alt="">
+        <span>Develop & 
+            Deploy</span>
+    </div>      
+</div>
+    <div class="set"> <div class="setimg">
+        <img src="Ellipse 10.png" alt="">
+        <span>04</span>
+    </div>
+    <div class="setc">
+        <img src="arrow-small-right.png" width="67px" alt="">
+        <span>
+            Monitor & Optimize
+        </span>
+    </div>
+</div>
+</div>
+</div>
+<div class="join">
+    <center>
+
+        <table style="width: 1058px; table-layout: fixed;">
+            <tr><h1 style="color: #FFFFFF; font-size: 38px;">JOIN CCC</h1></tr>
+            <hr>
+            <tr><p style="color: #FFFFFF; font-size: 36px; font-weight: lighter;">LET's Create Your Clud Experience</p></tr>
+            <tr>
+                <th style="width: 50%;" ><input type="text" name="" id="" class="nt"></th>
+                <td style="width: 50%;"><input type="text" name="" id="" class="nt"></td>
+           
+            </tr>
+            <tr>
+                <th><input type="text" name="" id="" class="nt"></th>
+                <td><input type="text" name="" id="" class="nt"></td>
+            </tr>
+           
+            <tr>
+                <th><input type="text" name="" id="" class="full"></th>
+                
+            </tr>
+           <th style="width: 100%;" >
+            <input type="text" class="area" name="" id="">
+           </th>
+        </table>
+        <button>Send to CCC</button>
+    </center>
+</div>
+</main>
+<footer>
+    <div class="foot1">
+        <div class="fpart1">
+            <div class="fimage">
+
+                <img src="Frame 1 1.png" alt="">
+            </div>
+            <div class="fline"></div>
+            
+        </div>
+        <div class="fpart1">
+            <div class="flist">
+              <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#about">SERVICES</a></li>
+                <li><a href="#about">TECHNOLOGIES</a></li>
+                <li><a href="#about">HOW TO</a></li>
+                <li><a href="#about">JOIN CCC</a></li>
+              </ul>
+            </div>
+            <div class="fline"></div>
+        </div>
+        <div class="fpart1">
+            <div class="flist">
+                <ul style="margin-left: -60px; ">
+                  <li><a href="#about">F.A.Q</a></li>
+                  <li><a href="#about">SITEMAP</a></li>
+                  <li><a href="#about">CONDITION</a></li>
+                  <li><a href="#about">LICENSES</a></li>
+                  
+                </ul>
+              </div>
+              <div class="fline"></div>
+        </div>
+        <div class="fpart4">
+            <span>SOCIALIZE WITH HYDRA</span>
+            <div class="contentimage">
+                <div class="i1">
+                    <img src="facebook.png" alt="">
+                </div>
+                <div class="i1"><img src="twitter.png" alt=""></div>
+                <div class="i1"><img src="linkedin.png" alt=""></div>
+                <div class="i1"><img src="youtube.png" alt=""></div>
+                <div class="i1"><img src="instagram.png" alt=""></div>
+                <div class="i1"><img src="pinterest.png" alt=""></div>
+            </div>
+            <button>BUILD BOOST BEYOND</button>
+        </div>
+    </div>
+    <div class="foot2">
+        <hr>
+        <center>
+
+            <span style="padding-bottom: 20px; margin-left: -500px;">
+    
+                2024 © CCC LANDING PAGE - BY AKGEC - ALL RIGHTS RESERVED 
+            </span>
+        </center>
+    </div>
+</footer>
+</body>
+</html>
